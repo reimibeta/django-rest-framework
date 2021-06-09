@@ -1,10 +1,11 @@
+from rest_framework import serializers
+
+
 class KeyRelatedField:
 
-    def related_field(self, write_only=True):
+    def related_field(self, queryset, write_only=True):
         return serializers.PrimaryKeyRelatedField(
-            queryset=Product.objects.filter(
-                is_active=True
-            ),
+            queryset=queryset,
             write_only=write_only
         )
 
