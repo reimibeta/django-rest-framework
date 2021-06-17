@@ -9,7 +9,7 @@ import os
 import setuptools
 
 setuptools.setup(
-    name='rest_framework_utils',
-    version='1.0.1',
+    name='django_rest_framework',
+    version='1.0.2',
     packages=setuptools.find_packages()
 )
